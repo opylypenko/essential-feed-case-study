@@ -15,6 +15,7 @@
 		378A231F2AD15A940099BD13 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A231E2AD15A940099BD13 /* FeedLoader.swift */; };
 		378A23232AD181560099BD13 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A23222AD181560099BD13 /* RemoteFeedLoader.swift */; };
 		378A23252AD1D5BB0099BD13 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A23242AD1D5BB0099BD13 /* HTTPClient.swift */; };
+		378A23272AD1D6750099BD13 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A23262AD1D6750099BD13 /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		378A231E2AD15A940099BD13 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		378A23222AD181560099BD13 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		378A23242AD1D5BB0099BD13 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		378A23262AD1D6750099BD13 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				378A23222AD181560099BD13 /* RemoteFeedLoader.swift */,
+				378A23262AD1D6750099BD13 /* FeedItemsMapper.swift */,
 				378A23242AD1D5BB0099BD13 /* HTTPClient.swift */,
 			);
 			path = FeedAPI;
@@ -225,6 +228,7 @@
 				378A23232AD181560099BD13 /* RemoteFeedLoader.swift in Sources */,
 				378A23252AD1D5BB0099BD13 /* HTTPClient.swift in Sources */,
 				378A231F2AD15A940099BD13 /* FeedLoader.swift in Sources */,
+				378A23272AD1D6750099BD13 /* FeedItemsMapper.swift in Sources */,
 				378A231D2AD154080099BD13 /* FeedItem.swift in Sources */,
 				378A23052AD1522B0099BD13 /* EssentialFeed.docc in Sources */,
 			);
