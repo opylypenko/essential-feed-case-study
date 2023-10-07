@@ -12,6 +12,7 @@
 		378A23102AD1522B0099BD13 /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A230F2AD1522B0099BD13 /* EssentialFeedTests.swift */; };
 		378A23112AD1522B0099BD13 /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 378A23032AD1522B0099BD13 /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		378A231D2AD154080099BD13 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A231C2AD154080099BD13 /* FeedItem.swift */; };
+		378A231F2AD15A940099BD13 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A231E2AD15A940099BD13 /* FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		378A230A2AD1522B0099BD13 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		378A230F2AD1522B0099BD13 /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		378A231C2AD154080099BD13 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		378A231E2AD15A940099BD13 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				378A23032AD1522B0099BD13 /* EssentialFeed.h */,
 				378A23042AD1522B0099BD13 /* EssentialFeed.docc */,
 				378A231C2AD154080099BD13 /* FeedItem.swift */,
+				378A231E2AD15A940099BD13 /* FeedLoader.swift */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378A231F2AD15A940099BD13 /* FeedLoader.swift in Sources */,
 				378A231D2AD154080099BD13 /* FeedItem.swift in Sources */,
 				378A23052AD1522B0099BD13 /* EssentialFeed.docc in Sources */,
 			);
