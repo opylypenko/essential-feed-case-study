@@ -85,7 +85,6 @@ final class URLSessionHTTPClientTests: XCTestCase {
     
     private func resultValuesFor(data: Data?, response: URLResponse? , error: Error?, file: StaticString = #filePath, line: UInt = #line) -> (data: Data, response: HTTPURLResponse)? {
         URLProtocolStub.stub(data:data, response: response, error: error)
-        let sut = makeSUT(file: file, line: line)
         let result = resultFor(data: data, response: response, error: error)
         
         switch result {
