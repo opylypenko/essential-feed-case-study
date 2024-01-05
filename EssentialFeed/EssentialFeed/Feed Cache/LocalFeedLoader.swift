@@ -38,7 +38,6 @@ public final class LocalFeedLoader {
             } else {
                 completion(.success([]))
             }
-            
         }
     }
     
