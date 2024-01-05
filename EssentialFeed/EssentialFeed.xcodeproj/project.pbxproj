@@ -27,6 +27,7 @@
 		37ED799D2B46E9E700E1A33F /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED799C2B46E9E700E1A33F /* FeedStore.swift */; };
 		37ED799F2B46F9D800E1A33F /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED799E2B46F9D800E1A33F /* RemoteFeedItem.swift */; };
 		37ED79A12B46FA8400E1A33F /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED79A02B46FA8400E1A33F /* LocalFeedImage.swift */; };
+		37ED79A32B481ACA00E1A33F /* LoadFeedFromCacheUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ED79A22B481ACA00E1A33F /* LoadFeedFromCacheUseCaseTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		37ED799C2B46E9E700E1A33F /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		37ED799E2B46F9D800E1A33F /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		37ED79A02B46FA8400E1A33F /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
+		37ED79A22B481ACA00E1A33F /* LoadFeedFromCacheUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				37ED79972B46027A00E1A33F /* CacheFeedUseCaseTests.swift */,
+				37ED79A22B481ACA00E1A33F /* LoadFeedFromCacheUseCaseTest.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				378A23DE2AD5F4C80099BD13 /* XCTestCase+MemoryLeaksTracking.swift in Sources */,
 				37ED79982B46027A00E1A33F /* CacheFeedUseCaseTests.swift in Sources */,
 				378A23CA2AD474460099BD13 /* URLSessionHTTPClientTests.swift in Sources */,
+				37ED79A32B481ACA00E1A33F /* LoadFeedFromCacheUseCaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
