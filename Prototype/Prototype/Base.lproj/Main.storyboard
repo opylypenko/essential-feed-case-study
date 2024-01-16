@@ -26,7 +26,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="CMe-jl-Oca">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="CMe-jl-Oca" customClass="FeedImageCell" customModule="Prototype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="66" width="393" height="580"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CMe-jl-Oca" id="oP5-Ve-Zcx">
@@ -108,6 +108,12 @@ Location</string>
                                         <constraint firstAttribute="trailingMargin" secondItem="x4S-fN-G06" secondAttribute="trailing" id="nTE-zQ-kay"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="GHJ-Az-rX2" id="clU-AJ-o9Q"/>
+                                    <outlet property="feedImageView" destination="i6L-Iq-a7z" id="X64-2n-LXA"/>
+                                    <outlet property="locationContainer" destination="ElU-8c-YGm" id="Mda-Dw-NrE"/>
+                                    <outlet property="locationLabel" destination="YJb-OW-wdu" id="Dfe-eQ-Of0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
