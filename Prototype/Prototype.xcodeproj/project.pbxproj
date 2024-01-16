@@ -13,6 +13,7 @@
 		37B2CF882B5734490029803E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B2CF872B5734490029803E /* Assets.xcassets */; };
 		37B2CF8B2B5734490029803E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B2CF892B5734490029803E /* LaunchScreen.storyboard */; };
 		37B2CF932B57412A0029803E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2CF922B57412A0029803E /* FeedViewController.swift */; };
+		37B2CF952B5743C20029803E /* FeedImageViewModel+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2CF942B5743C20029803E /* FeedImageViewModel+PrototypeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		37B2CF8A2B5734490029803E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B2CF8C2B5734490029803E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37B2CF922B57412A0029803E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		37B2CF942B5743C20029803E /* FeedImageViewModel+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageViewModel+PrototypeData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				37B2CF7E2B5734470029803E /* AppDelegate.swift */,
 				37B2CF802B5734470029803E /* SceneDelegate.swift */,
 				37B2CF922B57412A0029803E /* FeedViewController.swift */,
+				37B2CF942B5743C20029803E /* FeedImageViewModel+PrototypeData.swift */,
 				37B2CF842B5734470029803E /* Main.storyboard */,
 				37B2CF872B5734490029803E /* Assets.xcassets */,
 				37B2CF892B5734490029803E /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				37B2CF7F2B5734470029803E /* AppDelegate.swift in Sources */,
 				37B2CF932B57412A0029803E /* FeedViewController.swift in Sources */,
 				37B2CF812B5734470029803E /* SceneDelegate.swift in Sources */,
+				37B2CF952B5743C20029803E /* FeedImageViewModel+PrototypeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
