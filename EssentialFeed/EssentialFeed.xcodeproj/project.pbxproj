@@ -80,8 +80,8 @@
 		374C9C252B48AF9E00DAC4E4 /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		374C9C272B48B0EA00DAC4E4 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		374C9C292B49D26F00DAC4E4 /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
-		377D91412ADD240F00E40353 /* CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = CI.xctestplan; path = ../CI.xctestplan; sourceTree = "<group>"; };
 		377D91422ADD251500E40353 /* EssentialFeed.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeed.xctestplan; sourceTree = "<group>"; };
+		378472992B585F540068BAC2 /* CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI.xctestplan; sourceTree = "<group>"; };
 		378A23002AD1522B0099BD13 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		378A23032AD1522B0099BD13 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
 		378A23042AD1522B0099BD13 /* EssentialFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed.docc; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			children = (
 				37B2CF6C2B5494750029803E /* EssentialFeedCacheIntegrationTests.xctestplan */,
 				377D91422ADD251500E40353 /* EssentialFeed.xctestplan */,
-				377D91412ADD240F00E40353 /* CI.xctestplan */,
+				378472992B585F540068BAC2 /* CI.xctestplan */,
 				378A23022AD1522B0099BD13 /* EssentialFeed */,
 				378A230E2AD1522B0099BD13 /* EssentialFeedTests */,
 				37A5B4BB2ADC5C1C0093438A /* EssentialFeedEndToEndTests */,
