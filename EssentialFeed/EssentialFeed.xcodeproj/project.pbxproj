@@ -68,6 +68,7 @@
 		37F6DADE2B5DAB0600E8B573 /* FeedViewControllerTests+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6DADD2B5DAB0600E8B573 /* FeedViewControllerTests+Assertions.swift */; };
 		37F6DAE32B5DAD3700E8B573 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6DAE22B5DAD3700E8B573 /* FeedImageDataLoader.swift */; };
 		37F6DAE52B5DB07A00E8B573 /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6DAE42B5DB07A00E8B573 /* FeedRefreshViewController.swift */; };
+		37F6DAE72B5DB95200E8B573 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6DAE62B5DB95200E8B573 /* FeedImageCellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +186,7 @@
 		37F6DADD2B5DAB0600E8B573 /* FeedViewControllerTests+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Assertions.swift"; sourceTree = "<group>"; };
 		37F6DAE22B5DAD3700E8B573 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		37F6DAE42B5DB07A00E8B573 /* FeedRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRefreshViewController.swift; sourceTree = "<group>"; };
+		37F6DAE62B5DB95200E8B573 /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,6 +461,7 @@
 			children = (
 				3730AC602B59BA470004D0E0 /* FeedViewController.swift */,
 				37F6DAE42B5DB07A00E8B573 /* FeedRefreshViewController.swift */,
+				37F6DAE62B5DB95200E8B573 /* FeedImageCellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -745,6 +748,7 @@
 				37F6DAE32B5DAD3700E8B573 /* FeedImageDataLoader.swift in Sources */,
 				3730AC612B59BA470004D0E0 /* FeedViewController.swift in Sources */,
 				37F6DAE52B5DB07A00E8B573 /* FeedRefreshViewController.swift in Sources */,
+				37F6DAE72B5DB95200E8B573 /* FeedImageCellController.swift in Sources */,
 				37F6DACA2B5C492C00E8B573 /* UIView+Shimmering.swift in Sources */,
 				37F6DAC82B5B31AE00E8B573 /* FeedImageCell.swift in Sources */,
 				378472A32B586F800068BAC2 /* EssentialFeediOS.docc in Sources */,
