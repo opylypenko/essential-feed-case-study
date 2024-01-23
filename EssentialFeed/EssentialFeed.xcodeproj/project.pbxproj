@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3719716B2B60723900243B0F /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3719716A2B60723900243B0F /* FeedPresenter.swift */; };
 		3730AC582B595ABF0004D0E0 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3730AC572B595ABF0004D0E0 /* FeedViewControllerTests.swift */; };
 		3730AC5A2B595EC60004D0E0 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378A23002AD1522B0099BD13 /* EssentialFeed.framework */; };
 		3730AC5B2B595EC60004D0E0 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 378A23002AD1522B0099BD13 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -127,6 +128,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3719716A2B60723900243B0F /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		3730AC562B5873BA0004D0E0 /* CI_iOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = CI_iOS.xctestplan; path = ../CI_iOS.xctestplan; sourceTree = "<group>"; };
 		3730AC572B595ABF0004D0E0 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		3730AC602B59BA470004D0E0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		371971692B60718600243B0F /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3719716A2B60723900243B0F /* FeedPresenter.swift */,
 				37F6DB272B5F2E5F00E8B573 /* FeedViewModel.swift */,
 				37F6DB292B5F356200E8B573 /* FeedImageViewModel.swift */,
 			);
@@ -773,6 +776,7 @@
 				37F6DAE32B5DAD3700E8B573 /* FeedImageDataLoader.swift in Sources */,
 				37F6DAEA2B5DC1B000E8B573 /* FeedUIComposer.swift in Sources */,
 				3730AC612B59BA470004D0E0 /* FeedViewController.swift in Sources */,
+				3719716B2B60723900243B0F /* FeedPresenter.swift in Sources */,
 				37F6DAE52B5DB07A00E8B573 /* FeedRefreshViewController.swift in Sources */,
 				37F6DB2A2B5F356200E8B573 /* FeedImageViewModel.swift in Sources */,
 				37F6DAE72B5DB95200E8B573 /* FeedImageCellController.swift in Sources */,
