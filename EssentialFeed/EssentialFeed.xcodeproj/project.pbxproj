@@ -246,6 +246,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371971692B60718600243B0F /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				37F6DB272B5F2E5F00E8B573 /* FeedViewModel.swift */,
+				37F6DB292B5F356200E8B573 /* FeedImageViewModel.swift */,
+			);
+			path = "Feed Presentation";
+			sourceTree = "<group>";
+		};
 		3730AC592B595EC60004D0E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +267,7 @@
 			children = (
 				378472A22B586F800068BAC2 /* EssentialFeediOS.docc */,
 				37F6DAE12B5DAD2400E8B573 /* Feed Image Loader */,
+				371971692B60718600243B0F /* Feed Presentation */,
 				37F6DADF2B5DAC8000E8B573 /* Feed UI */,
 			);
 			path = EssentialFeediOS;
@@ -494,7 +504,6 @@
 			isa = PBXGroup;
 			children = (
 				37F6DAE82B5DC19400E8B573 /* Composers */,
-				37F6DB262B5F2E4400E8B573 /* Models */,
 				37F6DAD42B5DA83D00E8B573 /* Controllers */,
 				37F6DAD52B5DA85200E8B573 /* Views */,
 			);
@@ -524,15 +533,6 @@
 				37F6DAE92B5DC1B000E8B573 /* FeedUIComposer.swift */,
 			);
 			path = Composers;
-			sourceTree = "<group>";
-		};
-		37F6DB262B5F2E4400E8B573 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				37F6DB272B5F2E5F00E8B573 /* FeedViewModel.swift */,
-				37F6DB292B5F356200E8B573 /* FeedImageViewModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
