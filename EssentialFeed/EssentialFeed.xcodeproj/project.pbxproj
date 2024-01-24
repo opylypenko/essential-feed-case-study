@@ -720,6 +720,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 378A22F62AD1522B0099BD13;
 			productRefGroup = 378A23012AD1522B0099BD13 /* Products */;
