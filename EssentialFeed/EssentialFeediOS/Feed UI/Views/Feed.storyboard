@@ -73,7 +73,7 @@ Location</string>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="khw-Ly-fyB">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
                                                         </imageView>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePv-7A-s2D">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePv-7A-s2D" userLabel="Retry Button">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="">
@@ -83,6 +83,9 @@ Location</string>
                                                                 </preferredSymbolConfiguration>
                                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="qd7-US-mOr" eventType="touchUpInside" id="uny-4e-mmG"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,6 +127,14 @@ Location</string>
                                         <constraint firstAttribute="trailingMargin" secondItem="DoP-kV-h8z" secondAttribute="trailing" id="ndW-DA-Ddg"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="uPo-pm-O41" id="UoF-29-GLo"/>
+                                    <outlet property="feedImageContainer" destination="GNB-Ri-Kdr" id="ZkP-FR-UDH"/>
+                                    <outlet property="feedImageRetryButton" destination="ePv-7A-s2D" id="8ff-FX-d0P"/>
+                                    <outlet property="feedImageView" destination="khw-Ly-fyB" id="nUf-Pk-Da3"/>
+                                    <outlet property="locationContainer" destination="pYA-qS-dE6" id="8lP-ed-8Dd"/>
+                                    <outlet property="locationLabel" destination="24P-Ts-XJM" id="Fg0-mH-CzG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
