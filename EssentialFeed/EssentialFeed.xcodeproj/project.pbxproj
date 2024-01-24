@@ -721,6 +721,7 @@
 				en,
 				Base,
 				"pt-BR",
+				el,
 			);
 			mainGroup = 378A22F62AD1522B0099BD13;
 			productRefGroup = 378A23012AD1522B0099BD13 /* Products */;
