@@ -45,10 +45,11 @@ final class FeedPresenter {
     private var loadingView: FeedLoadingView
     private let errorView: FeedErrorView
     
-    init(feedView: FeedView, loadingView: FeedLoadingView, errorView: FeedErrorView) {
-        self.feedView = feedView
-        self.loadingView = loadingView
-        self.errorView = errorView
+    static var title: String {
+        NSLocalizedString("FEED_VIEW_TITLE",
+                          tableName: "Feed",
+                          bundle: Bundle(for: FeedPresenter.self),
+                          comment: "Title for the feed view")
     }
     
     private var feedLoadError: String {
@@ -56,6 +57,12 @@ final class FeedPresenter {
                                  tableName: "Feed",
                                  bundle: Bundle(for: FeedPresenter.self),
                                  comment: "Error message displayed when we can't load the image feed from the server")
+    }
+    
+    init(feedView: FeedView, loadingView: FeedLoadingView, errorView: FeedErrorView) {
+        self.feedView = feedView
+        self.loadingView = loadingView
+        self.errorView = errorView
     }
     
     func didStartLoadingFeed() {
@@ -76,6 +83,10 @@ final class FeedPresenter {
 
 final class FeedPresenterTets: XCTestCase {
 
+    func test_title_isLocalized() {
+        XCTAssertEqual(FeedPresenter.title, localized("FEED_VIEW_TITLE"))
+    }
+    
     func test_init_doesNotSendMessagesToView() {
         let (_, view) = makeSUT()
         
