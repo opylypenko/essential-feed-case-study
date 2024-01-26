@@ -14,7 +14,7 @@ struct FeedImageViewModel {
     let image: Any?
     let isLoading: Bool
     let shouldRetry: Bool
-
+    
     var hasLocation: Bool {
         return location != nil
     }
@@ -54,19 +54,19 @@ class FeedImagePresenter {
 }
 
 class FeedImagePresenterTests: XCTestCase {
-
+    
     func test_init_doesNotSendMessagesToView() {
         let (_, view) = makeSUT()
-
+        
         XCTAssertTrue(view.messages.isEmpty, "Expected no view messages")
     }
-
+    
     func test_didStartLoadingImageData_displaysLoadingImage() {
         let (sut, view) = makeSUT()
         let image = uniqueImage()
-
+        
         sut.didStartLoadingImageData(for: image)
-
+        
         let message = view.messages.first
         XCTAssertEqual(view.messages.count, 1)
         XCTAssertEqual(message?.description, image.description)
@@ -77,12 +77,12 @@ class FeedImagePresenterTests: XCTestCase {
     }
     
     func test_didFinishLoadingImageData_displaysRetryOnFailedImageTransformation() {
-        let (sut, view) = makeSUT(imageTransformer: { _ in nil })
+        let (sut, view) = makeSUT(imageTransformer: fail)
         let image = uniqueImage()
         let data = Data()
-
+        
         sut.didFinishLoadingImageData(with: data, for: image)
-
+        
         let message = view.messages.first
         XCTAssertEqual(view.messages.count, 1)
         XCTAssertEqual(message?.description, image.description)
@@ -93,7 +93,7 @@ class FeedImagePresenterTests: XCTestCase {
     }
     
     // MARK: - Helpers
-
+    
     private func makeSUT(
         imageTransformer: @escaping (Data) -> Any? = { _ in nil },
         file: StaticString = #file,
@@ -105,13 +105,17 @@ class FeedImagePresenterTests: XCTestCase {
         trackForMemoryLeaks(sut, file: file, line: line)
         return (sut, view)
     }
-
-    private class ViewSpy: FeedImageView {
-            private(set) var messages = [FeedImageViewModel]()
-
-            func display(_ model: FeedImageViewModel) {
-                messages.append(model)
-            }
+    
+    private var fail: (Data) -> Any? {
+        return { _ in nil }
     }
-
+    
+    private class ViewSpy: FeedImageView {
+        private(set) var messages = [FeedImageViewModel]()
+        
+        func display(_ model: FeedImageViewModel) {
+            messages.append(model)
+        }
+    }
+    
 }
