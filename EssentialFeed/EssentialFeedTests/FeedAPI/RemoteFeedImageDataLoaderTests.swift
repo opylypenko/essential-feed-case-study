@@ -143,10 +143,10 @@ final class RemoteFeedImageDataLoaderTests: XCTestCase {
             switch (receivedResult, expectedResult) {
             case let (.success(receivedData), .success(expectedData)):
                 XCTAssertEqual(receivedData, expectedData, file: file, line: line)
-            case let (.failure(receivedError as RemoteFeedImageDataLoader.Error), .failure(expectedResult as RemoteFeedImageDataLoader.Error)):
-                break
-            case let (.failure(receivedError as NSError), .failure(expectedResult as NSError)):
-                XCTAssertEqual(receivedError, expectedResult, file: file, line: line)
+            case let (.failure(receivedError as RemoteFeedImageDataLoader.Error), .failure(expectedError as RemoteFeedImageDataLoader.Error)):
+                XCTAssertEqual(receivedError, expectedError, file: file, line: line)
+            case let (.failure(receivedError as NSError), .failure(expectedError as NSError)):
+                XCTAssertEqual(receivedError, expectedError, file: file, line: line)
             default:
                 XCTFail("Expected result \(expectedResult) got \(receivedResult) instead", file: file, line: line)
             }
