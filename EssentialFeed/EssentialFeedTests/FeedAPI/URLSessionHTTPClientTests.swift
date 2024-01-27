@@ -24,7 +24,7 @@ final class URLSessionHTTPClientTests: XCTestCase {
         let url = anyURL()
         let exp = expectation(description: "Wait for request")
         
-        URLProtocolStub.observerRequests { request in
+        URLProtocolStub.observeRequests { request in
             XCTAssertEqual(request.url, url)
             XCTAssertEqual(request.httpMethod, "GET")
             exp.fulfill()
@@ -36,8 +36,12 @@ final class URLSessionHTTPClientTests: XCTestCase {
     }
     
     func test_cancelGetFromURLTask_cancelsURLRequest() {
-        let receivedError = resultErrorFor(taskHandler: { $0.cancel() }) as NSError?
+        let exp = expectation(description: "Wait for request")
+        URLProtocolStub.observeRequests { _ in exp.fulfill() }
 
+        let receivedError = resultErrorFor(taskHandler: { $0.cancel() }) as NSError?
+        wait(for: [exp], timeout: 1.0)
+        
         XCTAssertEqual(receivedError?.code, URLError.cancelled.rawValue)
     }
     
@@ -94,12 +98,11 @@ final class URLSessionHTTPClientTests: XCTestCase {
     }
     
     private func resultValuesFor(_ values: (data: Data?, response: URLResponse?, error: Error?), file: StaticString = #file, line: UInt = #line) -> (data: Data, response: HTTPURLResponse)? {
-        URLProtocolStub.stub(values)
         let result = resultFor(values, file: file, line: line)
         
         switch result {
-        case let .success((data, response)):
-            return (data, response)
+        case let .success(values):
+            return values
         default:
             XCTFail("Expected success, got \(result) instead", file: file, line: line)
             return nil
@@ -107,7 +110,6 @@ final class URLSessionHTTPClientTests: XCTestCase {
     }
     
     private func resultErrorFor(_ values: (data: Data?, response: URLResponse?, error: Error?)? = nil, taskHandler: (HTTPClientTask) -> Void = { _ in }, file: StaticString = #file, line: UInt = #line) -> Error? {
-        URLProtocolStub.stub(values)
         let result = resultFor(values, taskHandler: taskHandler, file: file, line: line)
         
         switch result {
@@ -120,7 +122,7 @@ final class URLSessionHTTPClientTests: XCTestCase {
     }
     
     private func resultFor(_ values: (data: Data?, response: URLResponse?, error: Error?)?, taskHandler: (HTTPClientTask) -> Void = { _ in },  file: StaticString = #file, line: UInt = #line) -> HTTPClient.Result {
-        URLProtocolStub.stub(values)
+        values.map { URLProtocolStub.stub(data: $0, response: $1, error: $2) }
         let sut = makeSUT(file: file, line: line)
         
         let exp = expectation(description: "Wait for completion")
