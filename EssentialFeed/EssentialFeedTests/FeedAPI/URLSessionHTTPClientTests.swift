@@ -20,7 +20,7 @@ final class URLSessionHTTPClientTests: XCTestCase {
         URLProtocolStub.removeStub()
     }
     
-    func test_getFromURL_performGETRequestWithURL() {
+    func test_getFromURL_performsGETRequestWithURL() {
         let url = anyURL()
         let exp = expectation(description: "Wait for request")
         
@@ -52,7 +52,7 @@ final class URLSessionHTTPClientTests: XCTestCase {
         XCTAssertNotNil(receivedError)
     }
 
-    func test_getFromURL_failsOnAllRepresentationCases() {
+    func test_getFromURL_failsOnAllInvalidRepresentationCases() {
         XCTAssertNotNil(resultErrorFor((data: nil, response: nil, error: nil)))
         XCTAssertNotNil(resultErrorFor((data: nil, response: nonHTTPURLResponse(), error: nil)))
         XCTAssertNotNil(resultErrorFor((data: anyData(), response: nil, error: nil)))
@@ -75,7 +75,7 @@ final class URLSessionHTTPClientTests: XCTestCase {
         XCTAssertEqual(receivedValues?.response.statusCode, response.statusCode)
     }
     
-    func test_getFromURL_succeedsWithEmptyDataOnHTTPURLResponseWithData() {
+    func test_getFromURL_succeedsWithEmptyDataOnHTTPURLResponseWithNilData() {
         let response = anyHTTPURLResponse()
         
         let receivedValues = resultValuesFor((data: nil, response: response, error: nil))
