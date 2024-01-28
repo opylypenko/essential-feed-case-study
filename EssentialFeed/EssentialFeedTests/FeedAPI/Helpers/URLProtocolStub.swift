@@ -28,12 +28,8 @@ class URLProtocolStub: URLProtocol {
         stub = Stub(data: data, response: response, error: error, requestObserver: nil)
     }
     
-    static func observeRequests(observer: @escaping(URLRequest) -> Void) {
+    static func observeRequests(observer: @escaping (URLRequest) -> Void) {
         stub = Stub(data: nil, response: nil, error: nil, requestObserver: observer)
-    }
-    
-    static func startInterceptingRequests() {
-        URLProtocol.registerClass(URLProtocolStub.self)
     }
     
     static func removeStub() {

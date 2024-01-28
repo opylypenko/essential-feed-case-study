@@ -8,12 +8,7 @@
 import XCTest
 import EssentialFeed
 
-final class URLSessionHTTPClientTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        URLProtocolStub.startInterceptingRequests()
-    }
+class URLSessionHTTPClientTests: XCTestCase {
     
     override func tearDown() {
         super.tearDown()
@@ -123,8 +118,8 @@ final class URLSessionHTTPClientTests: XCTestCase {
     
     private func resultFor(_ values: (data: Data?, response: URLResponse?, error: Error?)?, taskHandler: (HTTPClientTask) -> Void = { _ in },  file: StaticString = #file, line: UInt = #line) -> HTTPClient.Result {
         values.map { URLProtocolStub.stub(data: $0, response: $1, error: $2) }
+      
         let sut = makeSUT(file: file, line: line)
-        
         let exp = expectation(description: "Wait for completion")
         
         var receivedResult: HTTPClient.Result!
