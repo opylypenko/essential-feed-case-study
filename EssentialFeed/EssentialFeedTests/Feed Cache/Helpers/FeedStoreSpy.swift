@@ -26,11 +26,11 @@ class FeedStoreSpy: FeedStore {
         receivedMessages.append(.deleteCachedFeed)
     }
     
-    func completeDeleteion(with error: Error, at index: Int = 0) {
+    func completeDeletion(with error: Error, at index: Int = 0) {
         deletionCompletions[index](.failure(error))
     }
     
-    func completeDeleteionSuccessfully(at index: Int = 0) {
+    func completeDeletionSuccessfully(at index: Int = 0) {
         deletionCompletions[index](.success(()))
     }
     
