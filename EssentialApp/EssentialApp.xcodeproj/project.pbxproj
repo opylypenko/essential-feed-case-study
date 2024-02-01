@@ -21,6 +21,7 @@
 		374AEB822B66E72F00EB2052 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374AEB812B66E72F00EB2052 /* EssentialFeediOS.framework */; };
 		374AEB832B66E72F00EB2052 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 374AEB812B66E72F00EB2052 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		374AEB882B6C22F400EB2052 /* EssentialApp.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 374AEB872B6C22F400EB2052 /* EssentialApp.xctestplan */; };
+		374AEB8A2B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374AEB892B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		374AEB7D2B66E72600EB2052 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		374AEB812B66E72F00EB2052 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		374AEB872B6C22F400EB2052 /* EssentialApp.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EssentialApp.xctestplan; sourceTree = "<group>"; };
+		374AEB892B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				374AEB4C2B66E60700EB2052 /* AppDelegate.swift */,
 				374AEB4E2B66E60700EB2052 /* SceneDelegate.swift */,
+				374AEB892B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift */,
 				374AEB502B66E60700EB2052 /* ViewController.swift */,
 				374AEB522B66E60700EB2052 /* Main.storyboard */,
 				374AEB552B66E60A00EB2052 /* Assets.xcassets */,
@@ -298,6 +301,7 @@
 			files = (
 				374AEB512B66E60700EB2052 /* ViewController.swift in Sources */,
 				374AEB4D2B66E60700EB2052 /* AppDelegate.swift in Sources */,
+				374AEB8A2B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				374AEB4F2B66E60700EB2052 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
