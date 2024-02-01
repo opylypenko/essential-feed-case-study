@@ -21,6 +21,7 @@
 		374AEB882B6C22F400EB2052 /* EssentialApp.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 374AEB872B6C22F400EB2052 /* EssentialApp.xctestplan */; };
 		374AEB8A2B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374AEB892B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift */; };
 		374AEB8C2B6C5A0700EB2052 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374AEB8B2B6C5A0700EB2052 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */; };
+		374AEB8E2B6C5D6100EB2052 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374AEB8D2B6C5D6100EB2052 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		374AEB872B6C22F400EB2052 /* EssentialApp.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EssentialApp.xctestplan; sourceTree = "<group>"; };
 		374AEB892B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		374AEB8B2B6C5A0700EB2052 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
+		374AEB8D2B6C5D6100EB2052 /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				374AEB4C2B66E60700EB2052 /* AppDelegate.swift */,
 				374AEB4E2B66E60700EB2052 /* SceneDelegate.swift */,
 				374AEB892B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift */,
+				374AEB8D2B6C5D6100EB2052 /* FeedImageDataLoaderWithFallbackComposite.swift */,
 				374AEB502B66E60700EB2052 /* ViewController.swift */,
 				374AEB522B66E60700EB2052 /* Main.storyboard */,
 				374AEB552B66E60A00EB2052 /* Assets.xcassets */,
@@ -246,6 +249,7 @@
 				374AEB4D2B66E60700EB2052 /* AppDelegate.swift in Sources */,
 				374AEB8A2B6C587400EB2052 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				374AEB4F2B66E60700EB2052 /* SceneDelegate.swift in Sources */,
+				374AEB8E2B6C5D6100EB2052 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
