@@ -20,6 +20,7 @@
 		374AEB7F2B66E72600EB2052 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 374AEB7D2B66E72600EB2052 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		374AEB822B66E72F00EB2052 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374AEB812B66E72F00EB2052 /* EssentialFeediOS.framework */; };
 		374AEB832B66E72F00EB2052 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 374AEB812B66E72F00EB2052 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		374AEB882B6C22F400EB2052 /* EssentialApp.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 374AEB872B6C22F400EB2052 /* EssentialApp.xctestplan */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		374AEB6F2B66E60B00EB2052 /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		374AEB7D2B66E72600EB2052 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		374AEB812B66E72F00EB2052 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		374AEB872B6C22F400EB2052 /* EssentialApp.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EssentialApp.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		374AEB402B66E60700EB2052 = {
 			isa = PBXGroup;
 			children = (
+				374AEB872B6C22F400EB2052 /* EssentialApp.xctestplan */,
 				374AEB4B2B66E60700EB2052 /* EssentialApp */,
 				374AEB622B66E60B00EB2052 /* EssentialAppTests */,
 				374AEB6C2B66E60B00EB2052 /* EssentialAppUITests */,
@@ -265,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374AEB882B6C22F400EB2052 /* EssentialApp.xctestplan in Resources */,
 				374AEB592B66E60A00EB2052 /* LaunchScreen.storyboard in Resources */,
 				374AEB562B66E60A00EB2052 /* Assets.xcassets in Resources */,
 				374AEB542B66E60700EB2052 /* Main.storyboard in Resources */,
