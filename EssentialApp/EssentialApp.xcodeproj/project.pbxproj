@@ -51,6 +51,7 @@
 		37AEC2B32B6EE13C00E8401B /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2B02B6EE13C00E8401B /* WeakRefVirtualProxy.swift */; };
 		37AEC2B52B6EE39800E8401B /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2B42B6EE39800E8401B /* FeedAcceptanceTests.swift */; };
 		37AEC2B82B6EFA0300E8401B /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2B72B6EFA0300E8401B /* HTTPClientStub.swift */; };
+		37AEC2BA2B6EFA5100E8401B /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2B92B6EFA5100E8401B /* InMemoryFeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		37AEC2B02B6EE13C00E8401B /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		37AEC2B42B6EE39800E8401B /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		37AEC2B72B6EFA0300E8401B /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		37AEC2B92B6EFA5100E8401B /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				3785DF682B6D95BB003AB69B /* FeedLoaderStub.swift */,
 				3785DF722B6D9E6B003AB69B /* FeedImageDataLoaderSpy.swift */,
 				37AEC2B72B6EFA0300E8401B /* HTTPClientStub.swift */,
+				37AEC2B92B6EFA5100E8401B /* InMemoryFeedStore.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				37AEC2A52B6EE02900E8401B /* FeedViewController+TestHelpers.swift in Sources */,
 				3785DF732B6D9E6B003AB69B /* FeedImageDataLoaderSpy.swift in Sources */,
 				374AEB8C2B6C5A0700EB2052 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
+				37AEC2BA2B6EFA5100E8401B /* InMemoryFeedStore.swift in Sources */,
 				37AEC2932B6EDBAB00E8401B /* SceneDelegateTests.swift in Sources */,
 				37AEC2A42B6EE02900E8401B /* FeedImageCell+TestHelpers.swift in Sources */,
 				374AEB642B66E60B00EB2052 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
