@@ -33,7 +33,6 @@
 		3785DF752B6D9EF3003AB69B /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785DF742B6D9EF3003AB69B /* XCTestCase+FeedImageDataLoader.swift */; };
 		3785DF792B6DA205003AB69B /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785DF782B6DA205003AB69B /* FeedImageDataLoaderCacheDecorator.swift */; };
 		37AEC2872B6EB17100E8401B /* EssentialAppUIAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2862B6EB17100E8401B /* EssentialAppUIAcceptanceTests.swift */; };
-		37AEC2892B6EB17100E8401B /* EssentialAppUIAcceptanceTestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2882B6EB17100E8401B /* EssentialAppUIAcceptanceTestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +96,6 @@
 		3785DF782B6DA205003AB69B /* FeedImageDataLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		37AEC2842B6EB17100E8401B /* EssentialAppUIAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUIAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AEC2862B6EB17100E8401B /* EssentialAppUIAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUIAcceptanceTests.swift; sourceTree = "<group>"; };
-		37AEC2882B6EB17100E8401B /* EssentialAppUIAcceptanceTestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUIAcceptanceTestsLaunchTests.swift; sourceTree = "<group>"; };
 		37AEC28F2B6EB2C000E8401B /* EssentialAppUIAcceptanceTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = EssentialAppUIAcceptanceTests.xctestplan; path = /Users/opylypenko/Storage/iOS/Projects/FeedStudy/EssentialApp/EssentialAppUIAcceptanceTests.xctestplan; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -207,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				37AEC2862B6EB17100E8401B /* EssentialAppUIAcceptanceTests.swift */,
-				37AEC2882B6EB17100E8401B /* EssentialAppUIAcceptanceTestsLaunchTests.swift */,
 			);
 			path = EssentialAppUIAcceptanceTests;
 			sourceTree = "<group>";
@@ -376,7 +373,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37AEC2892B6EB17100E8401B /* EssentialAppUIAcceptanceTestsLaunchTests.swift in Sources */,
 				37AEC2872B6EB17100E8401B /* EssentialAppUIAcceptanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
