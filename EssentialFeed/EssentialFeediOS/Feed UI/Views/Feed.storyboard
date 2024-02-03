@@ -93,7 +93,7 @@ Location</string>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="khw-Ly-fyB">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
-                                                            <accessibility key="accessibilityConfiguration">
+                                                            <accessibility key="accessibilityConfiguration" identifier="feed-image-view">
                                                                 <bool key="isElement" value="YES"/>
                                                             </accessibility>
                                                         </imageView>
@@ -151,6 +151,7 @@ Location</string>
                                         <constraint firstAttribute="trailingMargin" secondItem="DoP-kV-h8z" secondAttribute="trailing" id="ndW-DA-Ddg"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="feed-image-cell"/>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="uPo-pm-O41" id="UoF-29-GLo"/>
                                     <outlet property="feedImageContainer" destination="GNB-Ri-Kdr" id="ZkP-FR-UDH"/>
