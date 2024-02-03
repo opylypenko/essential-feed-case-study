@@ -50,6 +50,7 @@
 		37AEC2B22B6EE13C00E8401B /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2AE2B6EE13C00E8401B /* FeedImageDataLoaderPresentationAdapter.swift */; };
 		37AEC2B32B6EE13C00E8401B /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2B02B6EE13C00E8401B /* WeakRefVirtualProxy.swift */; };
 		37AEC2B52B6EE39800E8401B /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2B42B6EE39800E8401B /* FeedAcceptanceTests.swift */; };
+		37AEC2B82B6EFA0300E8401B /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEC2B72B6EFA0300E8401B /* HTTPClientStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		37AEC2AF2B6EE13C00E8401B /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		37AEC2B02B6EE13C00E8401B /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		37AEC2B42B6EE39800E8401B /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
+		37AEC2B72B6EFA0300E8401B /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				374AEB922B6C5E1900EB2052 /* SharedTestHelpers.swift */,
 				3785DF682B6D95BB003AB69B /* FeedLoaderStub.swift */,
 				3785DF722B6D9E6B003AB69B /* FeedImageDataLoaderSpy.swift */,
+				37AEC2B72B6EFA0300E8401B /* HTTPClientStub.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				37AEC2A42B6EE02900E8401B /* FeedImageCell+TestHelpers.swift in Sources */,
 				374AEB642B66E60B00EB2052 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 				3785DF692B6D95BB003AB69B /* FeedLoaderStub.swift in Sources */,
+				37AEC2B82B6EFA0300E8401B /* HTTPClientStub.swift in Sources */,
 				37AEC29F2B6EE02900E8401B /* UIButton+TestHelpers.swift in Sources */,
 				374AEB912B6C5DC700EB2052 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				37AEC2A12B6EE02900E8401B /* UIRefreshControl+TestHelpers.swift in Sources */,
