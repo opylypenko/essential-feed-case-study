@@ -10,6 +10,17 @@ import EssentialFeediOS
 @testable import EssentialApp
 
 final class SceneDelegateTests: XCTestCase {
+    
+    func test_configureWindow_setsWindowAsKeyAndVisible() {
+        let window = UIWindowSpy()
+        let sut = SceneDelegate()
+        sut.window = window
+        
+        sut.configureWindow()
+        
+        XCTAssertEqual(window.makeKeyAndVisibleCallCount, 1, "Expected window window key and visible")
+        
+    }
 
     func test_sceneWillConnectToSession_configuresRootViewController() {
         let sut = SceneDelegate()
@@ -25,4 +36,11 @@ final class SceneDelegateTests: XCTestCase {
         XCTAssertTrue(topController is FeedViewController, "Expected a feed controller as top view controller, got \(String(describing: topController)) instead")
     }
 
+}
+
+private class UIWindowSpy: UIWindow {
+  var makeKeyAndVisibleCallCount = 0
+  override func makeKeyAndVisible() {
+    makeKeyAndVisibleCallCount += 1
+  }
 }
