@@ -439,6 +439,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		37885D8D2B743E15003B8048 /* ImageComments API */ = {
+			isa = PBXGroup;
+			children = (
+				37885D7C2B742096003B8048 /* RemoteImageCommentsLoader.swift */,
+				37885D7F2B7421BF003B8048 /* ImageCommentsMapper.swift */,
+			);
+			path = "ImageComments API";
+			sourceTree = "<group>";
+		};
+		37885D8E2B743E4B003B8048 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				37885D7A2B741E65003B8048 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
 		378A22F62AD1522B0099BD13 = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +496,7 @@
 				378A23042AD1522B0099BD13 /* EssentialFeed.docc */,
 				37885D852B743CA8003B8048 /* Shared API */,
 				37885D872B743CBB003B8048 /* Shared API Infra */,
+				37885D8D2B743E15003B8048 /* ImageComments API */,
 				37885D812B7426C6003B8048 /* Image Comments */,
 				37ED79992B46E90500E1A33F /* Feed Cache */,
 				378A23202AD15C890099BD13 /* FeedFeature */,
@@ -494,6 +512,7 @@
 				374AEB202B656F3600EB2052 /* Helpers */,
 				37885D882B743CF3003B8048 /* Shared API */,
 				37885D8A2B743D2E003B8048 /* Shared API Infra */,
+				37885D8E2B743E4B003B8048 /* Image Comments API */,
 				374AEAF62B63099500EB2052 /* Feed Presentation */,
 				37ED79942B45E34400E1A33F /* Feed Cache */,
 				378A23282AD1E2BF0099BD13 /* FeedAPI */,
@@ -519,8 +538,6 @@
 				37ED799E2B46F9D800E1A33F /* RemoteFeedItem.swift */,
 				378A23222AD181560099BD13 /* RemoteFeedLoader.swift */,
 				378A23262AD1D6750099BD13 /* FeedItemsMapper.swift */,
-				37885D7C2B742096003B8048 /* RemoteImageCommentsLoader.swift */,
-				37885D7F2B7421BF003B8048 /* ImageCommentsMapper.swift */,
 				37F6DAE22B5DAD3700E8B573 /* FeedImageDataLoader.swift */,
 				374AEB152B65682600EB2052 /* RemoteFeedImageDataLoader.swift */,
 			);
@@ -532,7 +549,6 @@
 			children = (
 				378A230F2AD1522B0099BD13 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				374AEB112B65353A00EB2052 /* RemoteFeedImageDataLoaderTests.swift */,
-				37885D7A2B741E65003B8048 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
