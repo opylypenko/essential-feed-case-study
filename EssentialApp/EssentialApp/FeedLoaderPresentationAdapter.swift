@@ -14,7 +14,7 @@ final class FeedLoaderPresenttionAdapter: FeedViewControllerDelegate {
     private var cancellable: Cancellable?
     var presenter: FeedPresenter?
     
-    init(feedLoader: @escaping() -> FeedLoader.Publisher) {
+    init(feedLoader: @escaping () -> FeedLoader.Publisher) {
         self.feedLoader = feedLoader
     }
     
