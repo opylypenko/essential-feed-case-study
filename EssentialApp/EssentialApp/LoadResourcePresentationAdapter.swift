@@ -9,7 +9,7 @@ import Combine
 import EssentialFeed
 import EssentialFeediOS
 
-final class LoadResourcePresenttionAdapter<Resource, View: ResourceView> {
+final class LoadResourcePresentationAdapter<Resource, View: ResourceView> {
     private let loader: () -> AnyPublisher<Resource, Error>
     private var cancellable: Cancellable?
     var presenter: LoadResourcePresenter<Resource, View>?
@@ -37,7 +37,7 @@ final class LoadResourcePresenttionAdapter<Resource, View: ResourceView> {
     }
 }
 
-extension LoadResourcePresenttionAdapter: FeedViewControllerDelegate {
+extension LoadResourcePresentationAdapter: FeedViewControllerDelegate {
     func didRequestFeedRefresh() {
         loadResource()
     }
