@@ -50,6 +50,8 @@
 		374C9C2A2B49D26F00DAC4E4 /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C9C292B49D26F00DAC4E4 /* FeedCachePolicy.swift */; };
 		37619D4C2B78F364009C7214 /* LoadResourcePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37619D4B2B78F364009C7214 /* LoadResourcePresenterTests.swift */; };
 		37619D4F2B78F628009C7214 /* LoadResourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37619D4E2B78F628009C7214 /* LoadResourcePresenter.swift */; };
+		37619D512B79048F009C7214 /* Shared.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 37619D502B79048F009C7214 /* Shared.xcstrings */; };
+		37619D532B79083F009C7214 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37619D522B79083F009C7214 /* SharedLocalizationTests.swift */; };
 		378472A32B586F800068BAC2 /* EssentialFeediOS.docc in Sources */ = {isa = PBXBuildFile; fileRef = 378472A22B586F800068BAC2 /* EssentialFeediOS.docc */; };
 		378472A92B586F800068BAC2 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3784729F2B586F800068BAC2 /* EssentialFeediOS.framework */; };
 		3785DF6D2B6D9B98003AB69B /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785DF6C2B6D9B98003AB69B /* FeedCache.swift */; };
@@ -191,6 +193,8 @@
 		374C9C292B49D26F00DAC4E4 /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
 		37619D4B2B78F364009C7214 /* LoadResourcePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenterTests.swift; sourceTree = "<group>"; };
 		37619D4E2B78F628009C7214 /* LoadResourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenter.swift; sourceTree = "<group>"; };
+		37619D502B79048F009C7214 /* Shared.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Shared.xcstrings; sourceTree = "<group>"; };
+		37619D522B79083F009C7214 /* SharedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTests.swift; sourceTree = "<group>"; };
 		377D91422ADD251500E40353 /* EssentialFeed.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeed.xctestplan; sourceTree = "<group>"; };
 		378472982B585F2C0068BAC2 /* EssentialFeedAPIEndToEndTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeedAPIEndToEndTests.xctestplan; sourceTree = "<group>"; };
 		378472992B585F540068BAC2 /* CI_macOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI_macOS.xctestplan; sourceTree = "<group>"; };
@@ -372,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				37619D4B2B78F364009C7214 /* LoadResourcePresenterTests.swift */,
+				37619D522B79083F009C7214 /* SharedLocalizationTests.swift */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				37619D4E2B78F628009C7214 /* LoadResourcePresenter.swift */,
+				37619D502B79048F009C7214 /* Shared.xcstrings */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -903,6 +909,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37619D512B79048F009C7214 /* Shared.xcstrings in Resources */,
 				374AEB002B63266200EB2052 /* Feed.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1021,6 +1028,7 @@
 				374AEB092B632A0B00EB2052 /* FeedLocalizationTests.swift in Sources */,
 				37ED79982B46027A00E1A33F /* CacheFeedUseCaseTests.swift in Sources */,
 				37B2CF212B5446FD0029803E /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
+				37619D532B79083F009C7214 /* SharedLocalizationTests.swift in Sources */,
 				374AEB3A2B66BF9A00EB2052 /* CoreDataFeedImageDataStoreTests.swift in Sources */,
 				37B2CF1D2B5445B40029803E /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */,
 				378A23CA2AD474460099BD13 /* URLSessionHTTPClientTests.swift in Sources */,

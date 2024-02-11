@@ -33,9 +33,9 @@ public final class FeedPresenter {
     
     private var feedLoadError: String {
         return NSLocalizedString("GENEGIC_CONNECTION_ERROR",
-                                 tableName: "Feed",
+                                 tableName: "Shared",
                                  bundle: Bundle(for: FeedPresenter.self),
-                                 comment: "Error message displayed when we can't load the image feed from the server")
+                                 comment: "Error message displayed when we can't load the feed from the server")
     }
     
     public init(feedView: FeedView, loadingView: FeedLoadingView, errorView: FeedErrorView) {
