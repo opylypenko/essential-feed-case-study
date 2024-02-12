@@ -22,11 +22,11 @@ final class ImageCommentsPresenterTests: XCTestCase {
         let comments = [
             ImageComment(id: UUID(),
                          message: "a message",
-                         createAt: now.adding(minutes: -5),
+                         createAt: now.adding(minutes: -5, calendar: calendar),
                          username: "a username"),
             ImageComment(id: UUID(),
                          message: "another message",
-                         createAt: now.adding(days: -1),
+                         createAt: now.adding(days: -1, calendar: calendar),
                          username: "another username")
         ]
         
