@@ -52,7 +52,7 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
         onRefresh?()
     }
     
-    public func display(_ cellControllers: [FeedImageCellController]) {
+    public func display(_ cellControllers: [CellController]) {
         loadingControllers = [:]
         tableModel = cellControllers
     }
