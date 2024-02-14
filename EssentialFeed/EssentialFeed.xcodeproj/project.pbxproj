@@ -603,8 +603,8 @@
 		37AEC2B62B6EF5BB00E8401B /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				37FAD8382B7D176500292510 /* Feed UI */,
 				37AEC2BD2B702D8800E8401B /* Helpers */,
-				37AEC2BB2B701EB500E8401B /* FeedSnapshotTests.swift */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
@@ -736,6 +736,14 @@
 			children = (
 			);
 			path = "Feed Image Loader";
+			sourceTree = "<group>";
+		};
+		37FAD8382B7D176500292510 /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				37AEC2BB2B701EB500E8401B /* FeedSnapshotTests.swift */,
+			);
+			path = "Feed UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
