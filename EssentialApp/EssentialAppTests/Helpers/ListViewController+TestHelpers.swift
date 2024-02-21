@@ -11,7 +11,7 @@ import EssentialFeediOS
 extension ListViewController {
     public override func loadViewIfNeeded() {
         super.loadViewIfNeeded()
-
+        
         tableView.frame = CGRect(x: 0, y: 0, width: 1, height: 1)
     }
     
@@ -54,8 +54,8 @@ extension ListViewController {
     }
     
     func simulateErrorViewTap() {
-         errorView.simulateTap()
-     }
+        errorView.simulateTap()
+    }
     
     var errorMessage: String? {
         return errorView.message
@@ -68,10 +68,10 @@ extension ListViewController {
     func simulateAppearance() {
         if !isViewLoaded {
             loadViewIfNeeded()
-
+            
             prepareForFirstAppearance()
         }
-
+        
         beginAppearanceTransition(true, animated: false)
         endAppearanceTransition()
     }
@@ -80,7 +80,7 @@ extension ListViewController {
         setSmallFrameToPreventRenderingCells()
         replaceRefreshControlWithFakeForiOS17PlusSupport()
     }
-
+    
     private func setSmallFrameToPreventRenderingCells() {
         tableView.frame = CGRect(x: 0, y: 0, width: 390, height: 1)
     }
@@ -96,7 +96,39 @@ extension ListViewController {
         
         refreshControl = fake
     }
+}
+
+extension ListViewController {
+    func numberOfRenderedComments() -> Int {
+        tableView.numberOfSections == 0 ? 0 : tableView.numberOfRows(inSection: commentsSection)
+    }
     
+    func commentMessage(at row: Int) -> String? {
+        commentView(at: row)?.messageLabel.text
+    }
+    
+    func commentDate(at row: Int) -> String? {
+        commentView(at: row)?.dateLabel.text
+    }
+    
+    func commentUsername(at row: Int) -> String? {
+        commentView(at: row)?.usernameLabel.text
+    }
+    
+    private func commentView(at row: Int) -> ImageCommentCell? {
+        guard numberOfRenderedFeedImageViews() > row else {
+            return nil
+        }
+        let ds = tableView.dataSource
+        let index = IndexPath(row: row, section: commentsSection)
+        return ds?.tableView(tableView, cellForRowAt: index) as? ImageCommentCell
+    }
+
+    
+    private var commentsSection: Int { 0 }
+}
+
+extension ListViewController {
     func numberOfRenderedFeedImageViews() -> Int {
         tableView.numberOfSections == 0 ? 0 : tableView.numberOfRows(inSection: feedImagesSection)
     }
