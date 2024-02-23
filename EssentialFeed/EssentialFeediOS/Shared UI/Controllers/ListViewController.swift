@@ -35,6 +35,11 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
         }
     }
     
+    public override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+        onViewIsAppearing?(self)
+    }
+    
     fileprivate func configureTableView() {
         dataSource.defaultRowAnimation = .fade
         tableView.dataSource = dataSource
@@ -45,11 +50,6 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
             self?.tableView.sizeTableHeaderToFit()
             self?.tableView.endUpdates()
         }
-    }
-    
-    public override func viewIsAppearing(_ animated: Bool) {
-        super.viewIsAppearing(animated)
-        onViewIsAppearing?(self)
     }
     
     public override func viewDidLayoutSubviews() {
