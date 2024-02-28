@@ -1,5 +1,5 @@
 //
-//  FeedEndpointTests.swift
+//  FeedEndpoint.swift
 //  EssentialFeed
 //
 //  Created by Oleksandr Pylypenko on 23.02.2024.
