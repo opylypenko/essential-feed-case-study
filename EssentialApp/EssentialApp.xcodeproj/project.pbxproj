@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3746B8642B933718003C5ADB /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746B8632B933718003C5ADB /* NullStore.swift */; };
 		374AEB4D2B66E60700EB2052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374AEB4C2B66E60700EB2052 /* AppDelegate.swift */; };
 		374AEB4F2B66E60700EB2052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374AEB4E2B66E60700EB2052 /* SceneDelegate.swift */; };
 		374AEB512B66E60700EB2052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374AEB502B66E60700EB2052 /* ViewController.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3746B8632B933718003C5ADB /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		374AEB492B66E60700EB2052 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		374AEB4C2B66E60700EB2052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		374AEB4E2B66E60700EB2052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,14 +151,15 @@
 		374AEB4B2B66E60700EB2052 /* EssentialApp */ = {
 			isa = PBXGroup;
 			children = (
+				374AEB4C2B66E60700EB2052 /* AppDelegate.swift */,
+				374AEB4E2B66E60700EB2052 /* SceneDelegate.swift */,
+				3746B8632B933718003C5ADB /* NullStore.swift */,
 				37885D782B72F897003B8048 /* CombineHelpers.swift */,
 				37AEC2AF2B6EE13C00E8401B /* LoadResourcePresentationAdapter.swift */,
 				37AEC2B02B6EE13C00E8401B /* WeakRefVirtualProxy.swift */,
 				37AEC2AC2B6EE12800E8401B /* FeedUIComposer.swift */,
 				379DD41B2B86B30E001C7C30 /* CommentsUIComposer.swift */,
 				37AEC2AA2B6EE0FA00E8401B /* FeedViewAdapter.swift */,
-				374AEB4C2B66E60700EB2052 /* AppDelegate.swift */,
-				374AEB4E2B66E60700EB2052 /* SceneDelegate.swift */,
 				374AEB502B66E60700EB2052 /* ViewController.swift */,
 				374AEB552B66E60A00EB2052 /* Assets.xcassets */,
 				374AEB572B66E60A00EB2052 /* LaunchScreen.storyboard */,
@@ -311,6 +314,7 @@
 			files = (
 				374AEB512B66E60700EB2052 /* ViewController.swift in Sources */,
 				37885D792B72F897003B8048 /* CombineHelpers.swift in Sources */,
+				3746B8642B933718003C5ADB /* NullStore.swift in Sources */,
 				374AEB4D2B66E60700EB2052 /* AppDelegate.swift in Sources */,
 				37AEC2AB2B6EE0FA00E8401B /* FeedViewAdapter.swift in Sources */,
 				379DD41C2B86B30E001C7C30 /* CommentsUIComposer.swift in Sources */,
