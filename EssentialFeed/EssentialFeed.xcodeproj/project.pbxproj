@@ -630,6 +630,7 @@
 				378A231C2AD154080099BD13 /* FeedImage.swift */,
 				3785DF6C2B6D9B98003AB69B /* FeedCache.swift */,
 				3785DF762B6DA154003AB69B /* FeedImageDataCache.swift */,
+				37F6DAE22B5DAD3700E8B573 /* FeedImageDataLoader.swift */,
 			);
 			path = FeedFeature;
 			sourceTree = "<group>";
@@ -640,7 +641,6 @@
 				374AEB192B656D9F00EB2052 /* Helpers */,
 				378A23222AD181560099BD13 /* RemoteFeedLoader.swift */,
 				378A23262AD1D6750099BD13 /* FeedItemsMapper.swift */,
-				37F6DAE22B5DAD3700E8B573 /* FeedImageDataLoader.swift */,
 				37885D952B756E12003B8048 /* FeedImageDataMapper.swift */,
 				37BDE0B72B88FA6D004DDA15 /* FeedEndpoint.swift */,
 			);
