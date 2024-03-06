@@ -20,24 +20,24 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
 
     public var onRefresh: (() -> Void)?
     
-    private var onViewIsAppearing: ((ListViewController) -> Void)?
+    private var onViewDidAppear: ((ListViewController) -> Void)?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         
         configureTableView()
         
-        onViewIsAppearing = { [weak self] vc in
+        onViewDidAppear = { [weak self] vc in
             guard let self else { return }
-    
+            
             self.refresh()
-            vc.onViewIsAppearing = nil
+            vc.onViewDidAppear = nil
         }
     }
     
-    public override func viewIsAppearing(_ animated: Bool) {
-        super.viewIsAppearing(animated)
-        onViewIsAppearing?(self)
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        onViewDidAppear?(self)
     }
     
     fileprivate func configureTableView() {
