@@ -190,7 +190,8 @@ Given the customer doesn't have connectivity
 
 ## Flowchart
 
-![Feed Loading Feature](feed_flowchart.png)
+![feed_flowchart](https://github.com/opylypenko/essential-feed-case-study/assets/40546549/eb16d4ec-7b1e-4669-8292-d543d7dea1b5)
+
 
 ## Model Specs
 
@@ -338,4 +339,5 @@ GET /image/{image-id}/comments
 
 ## App Architecture
 
-![](architecture.png)
+![architecture](https://github.com/opylypenko/essential-feed-case-study/assets/40546549/7767a654-64f4-4f08-a199-3681590b6950)
+
